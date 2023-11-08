@@ -15,6 +15,8 @@ public class Pa2U1P5EgApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("Hola mundo");
+		System.out.println("Soy Erika Gualoto");
+		System.out.println("Cambio en la misma rama");
 		
 	}
 
