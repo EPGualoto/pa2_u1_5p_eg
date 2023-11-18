@@ -1,5 +1,7 @@
 package com.uce.edu.repository;
 
+import java.util.List;
+
 import com.uce.edu.repository.modelo.Materia;
 
 public interface IMateriaRepository {
@@ -10,4 +12,6 @@ public interface IMateriaRepository {
 	public void actualizar(Materia materia);
 	
 	public void borrar(String codigo);
+	
+	public List<Materia> seleccionarTodos(Materia materia);
 }
