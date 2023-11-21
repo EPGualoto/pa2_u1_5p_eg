@@ -37,6 +37,7 @@ public class Pa2U1P5EgApplication implements CommandLineRunner {
 		for (Materia mat : reporte) {
 			System.out.println(mat);
 		}
+		
 		System.out.println("ReporteFin");
 		
 		Materia mate=this.iMateriaService.buscar("M1");
