@@ -13,7 +13,7 @@ public interface IMateriaService {
 	
 	public void eliminar(String codigo);
 	
-	public List<Materia> buscarTodos(Materia materia);
+	public List<Materia> buscarTodos();
 	
 }
 

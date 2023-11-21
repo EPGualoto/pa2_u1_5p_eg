@@ -39,8 +39,8 @@ public class MateriaServiceImpl implements IMateriaService{
 	}
 
 	@Override
-	public List<Materia> buscarTodos(Materia materia) {
-		return this.iMateriaReposotory.seleccionarTodos(materia);
+	public List<Materia> buscarTodos() {
+		return this.iMateriaReposotory.seleccionarTodos();
 	}
 
 }

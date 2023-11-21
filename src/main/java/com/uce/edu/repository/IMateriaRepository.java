@@ -13,5 +13,5 @@ public interface IMateriaRepository {
 	
 	public void borrar(String codigo);
 	
-	public List<Materia> seleccionarTodos(Materia materia);
+	public List<Materia> seleccionarTodos();
 }

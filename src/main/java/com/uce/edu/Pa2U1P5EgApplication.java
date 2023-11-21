@@ -33,7 +33,7 @@ public class Pa2U1P5EgApplication implements CommandLineRunner {
 		this.iMateriaService.registrar(materia);
 		
 		System.out.println("Reporte Inicio");
-		List <Materia> reporte = this.iMateriaService.buscarTodos(materia);
+		List <Materia> reporte = this.iMateriaService.buscarTodos();
 		for (Materia mat : reporte) {
 			System.out.println(mat);
 		}

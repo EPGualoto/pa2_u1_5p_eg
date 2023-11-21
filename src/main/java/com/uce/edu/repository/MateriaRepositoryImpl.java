@@ -51,10 +51,9 @@ public class MateriaRepositoryImpl implements IMateriaRepository{
 	
 
 	@Override
-	public List<Materia> seleccionarTodos(Materia materia) {
+	public List<Materia> seleccionarTodos() {
 		// TODO Auto-generated method stub
-		base.add(materia);
-		return null;
+		return base;
 	}
 
 }
