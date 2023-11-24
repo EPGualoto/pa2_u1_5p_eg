@@ -33,7 +33,6 @@ public class Pa2U1P5EgApplication implements CommandLineRunner {
 		
 		System.out.println(this.materia1);
 		this.materia1.setNombre("Nuevo nombre");
-		
 		System.out.println(this.materia1);
 		System.out.println(this.materia);
 		
