@@ -16,13 +16,12 @@ public class CuentaBancariaRepositoryImpl implements ICuentaBancariaRepository {
 		// TODO Auto-generated method stub
 		for(CuentaBancaria cuenta:base) {
 			if(cuenta.getNumero().equals(numero)) {
-				/*CuentaBancaria cta = new CuentaBancaria();
+				CuentaBancaria cta = new CuentaBancaria();
 				cta.setCedulaPropietario(cuenta.getCedulaPropietario());
 				cta.setNumero(cuenta.getNumero());
-				cta.setSaldo(cuenta.getSaldo());*/
+				cta.setSaldo(cuenta.getSaldo());
 				
-				//return new CuentaBancaria()
-				return cuenta;
+				return cta;
 			}
 		}
 		return null;
