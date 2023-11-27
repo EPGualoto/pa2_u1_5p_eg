@@ -13,6 +13,7 @@ import com.uce.edu.transferencia.repository.modelo.Transferencia;
 
 @Service
 public class TransferenciaServiceImpl implements ITransferenciaService {
+	private int transferenciasExitosas = 0;
 	
 	@Autowired
 	private ITransferenciaRepository iTransferenciaRepository;
@@ -79,11 +80,28 @@ public class TransferenciaServiceImpl implements ITransferenciaService {
 			transferencia.setNumero("12312313");
 			
 			this.iTransferenciaRepository.insertar(transferencia);
+			
+			desarrollar();
+			
 			System.out.println("Transferencia realizada con éxito");
+			
+			 System.out.println("Total de transferencias exitosas: " + exito());
 		}else {
 			System.out.println("Saldo no disponible");
 		}
 		
+	}
+
+	@Override
+	public void desarrollar() {
+		// TODO Auto-generated method stub
+		transferenciasExitosas++;
+	}
+
+	@Override
+	public int exito() {
+		// TODO Auto-generated method stub
+		return transferenciasExitosas;
 	}
 
 }

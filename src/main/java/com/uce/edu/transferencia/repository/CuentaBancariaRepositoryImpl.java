@@ -14,14 +14,17 @@ public class CuentaBancariaRepositoryImpl implements ICuentaBancariaRepository {
 	@Override
 	public CuentaBancaria seleccionar(String numero) {
 		// TODO Auto-generated method stub
+		
+		
 		for(CuentaBancaria cuenta:base) {
+			
 			if(cuenta.getNumero().equals(numero)) {
 				CuentaBancaria cta = new CuentaBancaria();
 				cta.setCedulaPropietario(cuenta.getCedulaPropietario());
 				cta.setNumero(cuenta.getNumero());
 				cta.setSaldo(cuenta.getSaldo());
 				
-				return cta;
+				return cuenta;
 			}
 		}
 		return null;
