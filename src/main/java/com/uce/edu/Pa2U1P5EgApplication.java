@@ -45,6 +45,7 @@ public class Pa2U1P5EgApplication implements CommandLineRunner {
 		//System.out.println(ctaDestino);
 		
 		CuentaBancaria ctaOrigen1 = this.bancariaService.buscar("1234");
+		
 		System.out.println(ctaOrigen1);
 		
 		CuentaBancaria ctaDestino1 = this.bancariaService.buscar("5678");
