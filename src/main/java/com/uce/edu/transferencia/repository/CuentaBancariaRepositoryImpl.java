@@ -1,5 +1,6 @@
 package com.uce.edu.transferencia.repository;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,15 +16,21 @@ public class CuentaBancariaRepositoryImpl implements ICuentaBancariaRepository {
 	public CuentaBancaria seleccionar(String numero) {
 		// TODO Auto-generated method stub
 		
-		
 		for(CuentaBancaria cuenta:base) {
-			
 			if(cuenta.getNumero().equals(numero)) {
 				CuentaBancaria cta = new CuentaBancaria();
 				cta.setCedulaPropietario(cuenta.getCedulaPropietario());
 				cta.setNumero(cuenta.getNumero());
 				cta.setSaldo(cuenta.getSaldo());
-				
+				return cta;
+			}
+		}
+		return null;
+	}
+	
+	public CuentaBancaria seleccionarEliminar(String numero) {
+		for(CuentaBancaria cuenta: base) {
+			if (cuenta.getNumero().equals(numero)) {
 				return cuenta;
 			}
 		}
@@ -46,9 +53,16 @@ public class CuentaBancariaRepositoryImpl implements ICuentaBancariaRepository {
 	@Override
 	public void eliminar(String numero) {
 		// TODO Auto-generated method stub
-		CuentaBancaria cuentaBancaria = this.seleccionar(numero);
+		CuentaBancaria cuentaBancaria = this.seleccionarEliminar(numero);
 		base.remove(cuentaBancaria);
+	}
 
+	@Override
+	public void depositar() {
+		// TODO Auto-generated method stub
+		//CuentaBancaria cuentaBancaria = this.depositar();
+		
+		
 	}
 
 }

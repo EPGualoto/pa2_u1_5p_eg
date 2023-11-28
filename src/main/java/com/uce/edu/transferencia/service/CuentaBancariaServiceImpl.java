@@ -37,4 +37,10 @@ public class CuentaBancariaServiceImpl implements ICuentaBancariaService {
 
 	}
 
+	@Override
+	public void agregar() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

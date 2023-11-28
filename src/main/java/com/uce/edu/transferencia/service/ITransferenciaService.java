@@ -1,7 +1,9 @@
 package com.uce.edu.transferencia.service;
 
 import java.math.BigDecimal;
+import java.util.List;
 
+import com.uce.edu.repository.modelo.Materia;
 import com.uce.edu.transferencia.repository.modelo.Transferencia;
 
 public interface ITransferenciaService {
@@ -18,5 +20,7 @@ public interface ITransferenciaService {
 	
 	public void desarrollar();
 	
-	public int exito();
+	public int mostrar();
+	
+	public List<Transferencia> buscarTodos();
 }
