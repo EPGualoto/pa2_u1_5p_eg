@@ -14,7 +14,6 @@ public class CuentaBancariaRepositoryImpl implements ICuentaBancariaRepository {
 	@Override
 	public CuentaBancaria seleccionar(String numero) {
 		// TODO Auto-generated method stub
-		
 		for(CuentaBancaria cuenta:base) {
 			if(cuenta.getNumero().equals(numero)) {
 				CuentaBancaria cta = new CuentaBancaria();
